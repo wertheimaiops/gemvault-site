@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GemVault — Join the Waitlist</title>
+  <meta name="description" content="GemVault is coming to the Chrome Web Store. Join the waitlist to be first in line.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','ui-sans-serif','system-ui']}}}}</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{background-color:#08080E;color:#F8FAFC;font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,sans-serif;overflow-x:hidden}
+    .aurora-container{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+    .aurora-blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:0.13}
+    .aurora-1{width:700px;height:700px;background:radial-gradient(circle,#8B5CF6 0%,transparent 70%);top:-250px;left:-150px;animation:aurora1 13s ease-in-out infinite}
+    .aurora-2{width:550px;height:550px;background:radial-gradient(circle,#3B82F6 0%,transparent 70%);top:40vh;right:-180px;animation:aurora2 17s ease-in-out infinite}
+    .aurora-3{width:450px;height:450px;background:radial-gradient(circle,#06B6D4 0%,transparent 70%);bottom:10vh;left:35%;animation:aurora3 21s ease-in-out infinite}
+    @keyframes aurora1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(50px,-40px) scale(1.12)}}
+    @keyframes aurora2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-60px,50px) scale(0.88)}}
+    @keyframes aurora3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,60px) scale(1.08)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pulse-ring{0%{box-shadow:0 0 0 0 rgba(139,92,246,0.5)}70%{box-shadow:0 0 0 10px rgba(139,92,246,0)}100%{box-shadow:0 0 0 0 rgba(139,92,246,0)}}
+    .glass{background:rgba(255,255,255,0.04);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.08)}
+    .gradient-text{background:linear-gradient(130deg,#C4B5FD 0%,#93C5FD 55%,#67E8F9 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .btn-primary{background:linear-gradient(135deg,#7C3AED 0%,#2563EB 100%);transition:opacity .2s ease,transform .15s ease,box-shadow .2s ease;position:relative;overflow:hidden}
+    .btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.12) 0%,transparent 60%);pointer-events:none}
+    .btn-primary:hover{opacity:.92;transform:translateY(-2px);box-shadow:0 10px 36px rgba(124,58,237,0.45)}
+    .nav-bar{background:rgba(8,8,14,0.82);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.05)}
+    .pulse-dot{animation:pulse-ring 2.2s cubic-bezier(0.455,.03,.515,.955) infinite}
+    .hero-animate{animation:fadeUp .7s ease both}
+    .hero-animate-2{animation:fadeUp .7s .15s ease both}
+    .hero-animate-3{animation:fadeUp .7s .3s ease both}
+    .feat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.07) 50%,transparent);margin:0 auto;max-width:80rem}
+  </style>
+</head>
+<body>
+  <div class="aurora-container" aria-hidden="true">
+    <div class="aurora-blob aurora-1"></div>
+    <div class="aurora-blob aurora-2"></div>
+    <div class="aurora-blob aurora-3"></div>
+  </div>
+  <div class="relative z-10">
+    <nav class="nav-bar fixed top-0 left-0 right-0 z-50" aria-label="Main navigation">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5 group" aria-label="GemVault home">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-blue-500 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L2 8l10 14L22 8z" fill="white" opacity="0.9"/><path d="M2 8h20M7 2l5 6 5-6" stroke="white" stroke-width="1.5" stroke-linejoin="round" opacity="0.6"/></svg>
+          </div>
+          <span class="font-extrabold text-lg text-white tracking-tight">GemVault</span>
+        </a>
+        <a href="/" class="text-sm text-slate-400 hover:text-white transition-colors duration-200">← Wertheim AI Ops</a>
+      </div>
+    </nav>
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 pt-16 pb-24 text-center">
+      <div class="max-w-3xl mx-auto">
+        <div class="hero-animate inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass text-sm text-violet-300 mb-8">
+          <span class="pulse-dot w-2 h-2 rounded-full bg-violet-400 inline-block" aria-hidden="true"></span>
+          Chrome Extension · Coming Soon
+        </div>
+        <h1 class="hero-animate-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.12]">
+          GemVault: The Missing<br><span class="gradient-text">Organizer for Your Gemini Gems.</span>
+        </h1>
+        <p class="hero-animate-3 text-lg sm:text-xl text-slate-400 max-w-xl mx-auto mb-12 leading-relaxed">
+          Stop scrolling through endless Gems. <strong class="text-slate-200 font-semibold">Organize, categorize, and find your AI workflows in seconds</strong> — right inside Gemini.
+        </p>
+        <div class="hero-animate-3 max-w-md mx-auto mb-8">
+          <form id="waitlist-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdSiL31EDAljvXp0uPzLEyGGVda5Lmla7JBHmFokAu4SeswpA/formResponse" method="POST" target="_blank" class="flex flex-col sm:flex-row gap-3">
+            <input type="email" name="entry.1366593123" placeholder="Enter your email address" required class="flex-1 px-4 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:border-transparent text-base">
+            <button type="submit" class="btn-primary px-7 py-3.5 rounded-xl font-bold text-white text-base whitespace-nowrap">Join the Waitlist</button>
+          </form>
+          <p class="text-slate-600 text-xs mt-3">No spam. Unsubscribe anytime.</p>
+        </div>
+        <div class="hero-animate-3 flex flex-wrap items-center justify-center gap-3">
+          <span class="glass text-xs text-slate-400 px-3 py-1.5 rounded-full">Folders &amp; drag-drop</span>
+          <span class="glass text-xs text-slate-400 px-3 py-1.5 rounded-full">Instant search</span>
+          <span class="glass text-xs text-slate-400 px-3 py-1.5 rounded-full">Cross-device sync</span>
+          <span class="glass text-xs text-slate-400 px-3 py-1.5 rounded-full">Free up to 20 Gems</span>
+          <span class="glass text-xs text-slate-400 px-3 py-1.5 rounded-full">$19 one-time</span>
+        </div>
+      </div>
+    </section>
+    <footer class="border-t border-white/5 py-8 px-4 sm:px-6 text-center">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+        <span class="font-bold text-white">GemVault</span>
+        <p class="text-slate-600">&copy; 2026 GemVault. All rights reserved.</p>
+        <a href="/" class="text-slate-500 hover:text-slate-300 transition-colors">Wertheim AI Ops</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
